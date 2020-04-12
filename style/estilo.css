@@ -1,0 +1,124 @@
+*{
+    font-family: 'Libre Baskerville', serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    
+    height: 100vh;
+    margin: 0;
+    display: grid;
+    grid-template-rows: 120px 1fr 60px;
+    grid-template-columns: 1fr;
+    grid-template-areas: "cabecalho" "principal" "footer" ;
+}
+.cabecalho{
+    grid-area: cabecalho;
+    background-color: rgb(134, 134, 230);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+    z-index: 1;
+    box-shadow: 0px 4px 15px -2 rgba(0,0,0,0.75);
+}
+.principal{
+    grid-area: principal;
+    height: calc(100vh - 180px);
+    background-color: #f0f0f0f0;
+    padding: 20px;
+}
+.conteudo{
+    position: relative;
+    height: 100%;
+    overflow-y: scroll;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0px 0px 25px 0px rgba(0,0,0,2);
+}
+.footer{
+    grid-area: footer;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+    padding: 0px 20px;
+    color: #444;
+}
+
+header > nav > ul{
+    list-style: none;
+}
+header > nav > ul > li{
+    display: inline;
+    padding: 10px;
+    margin: 20px;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+header > nav > ul > li:hover{
+    background-color: #444;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+.sobre > h1{
+    text-align: center;
+}
+.sobre > p{
+    text-align: left;
+}
+.cursos{
+    margin-left: 20px;
+}
+.cursos > section > h2{
+    text-align: center;
+}
+.cursos > section > ul{
+    text-align: justify;
+    list-style: outside;
+}
+.experiencia{
+    margin-left: 20px;
+}
+
+.experiencia > section > h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.experiencia #experiencia1{
+    width: 45%;
+    float: left;
+    margin-top: 20px;
+    
+}
+.experiencia #experiencia2{
+    width: 49%;
+    float: right;
+}
+#experiencia1 > ul{
+    list-style: none;
+}
+#experiencia2 > ul{
+    list-style: none;
+}
+.sem-formatacao{
+    list-style: none;
+    margin-left: 20px;
+}
+.footer #footer1{
+   margin-left: 20px;
+   padding: 20px;
+}
+.footer > #footer1 > a{
+    margin-left: 20px;
+    padding: 20px;
+ }
+.footer #footer2{
+    margin-left: 20px;
+    padding: 20px;
+}
