@@ -127,7 +127,7 @@ a{
     header > nav > ul > li{
         display: block;
         padding: 10px;
-        margin: 20px;
+        margin: 5px;
         font-size: 1.3rem;
         cursor: pointer;
     }
